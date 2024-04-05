@@ -64,7 +64,11 @@ Item {
         InputPanel.hideKeyboardIcon = hideKeyboardIcon;
         loadLettersLayout();
     }
+	onBackgroundColorChanged : InputPanel.backgroundColor = root.backgroundColor;
+	onBtnBackgroundColorChanged : InputPanel.btnBackgroundColor = root.btnBackgroundColor;
+	onBtnSpecialBackgroundColorChanged : InputPanel.btnSpecialBackgroundColor = root.btnSpecialBackgroundColor;
 
+	onBtnTextColorChanged : InputPanel.btnTextColor = root.btnTextColor;
     KeyPopup {
         id: keyPopup
 
